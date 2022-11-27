@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bli medlem</title>
+
+    <!-- Primary fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/fav0fih.css">
+    
+    <!-- Secondary fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+    <!-- Stylesheets -->
+    <link href="member.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+
+            <a class="header__logo" href="index.html">
+                <img src="assets/icons/korp.png" alt="logotyp med bild på en korp" class="header__logo-img">
+                <h2 class="header__logo-text">Korpen</h2>
+            </a>
+
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="/index.html" class="menu__link link">Hem</a></li>
+                    <li class="menu__item"><a href="" class="menu__link link">Om oss</a></li>
+                    <li class="menu__item"><a href="" class="menu__link link">Gästhantverkare</a></li>
+                    <li class="menu__item"><a href="/member.html" class="menu__link link">Bli medlem</a></li>
+                    <li class="menu__item"><a href="" class="menu__link link">Galleri</a></li>
+                    <li class="menu__item"><a href="" class="menu__link link">Butik</a></li>
+                    <li class="menu__item"><a href="" class="menu__link link">Kontakt & Öppettider</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="header__right">
+
+                <div class="search">
+                    <input type="text" name="search" class="search__input" placeholder="Vad letar du efter?"></form>
+                    <img src="assets/icons/search.svg" alt="sökikon" class="search__img">
+                </div>
+                    
+                <!-- Burger navigation -->
+                <nav class="menu-btn">
+                    <div class="menu-btn__burger">
+                    </div>
+                </nav>
+                
+            </div>
+
+        </div>
+    </header>
+    
+    <div class="contactALL">
+
+        <div class="contactROW1">
+            <div class="contactBOX1">
+                <h3>OM OSS</h3>
+                <p> Korpens Hantverksbutik och galleri är en ekonomisk förening. Vi är för närvarande 13 medlemmar. <br> Är du intresserad att vara med? Fyll i formuläret nedan, gärna med bilder på ditt hantverk.<br>
+                    Finns det plats för ditt hantverk kallas du till ett månadmöte då du får presentera dig och dina produkter.<br> Därefter beslutar mötet om du kan väljas in.</p>
+            </div>
+            <div class="contactBOX2">
+                <img src="assets/images/tavla1.jpeg" alt="tavla med blommor">
+            </div>
+
+        </div>
+
+        <div class="contactROW2">
+            <div class="contactBOX3">
+                <img class="silver" src="assets/images/ringarsilver.jpeg" alt="silversmycken">
+
+            </div>
+            <div class="contactBOX4">
+                <h3>VILLKOR FÖR MEDLEMAR</h3>
+                <ul class="">
+                    <li>Endast produkter av den typ som godkänts vid något möte får säljas i butiken</li>
+                    <li>Varje medlem betalar en ingångsavgift och varje månad en av föreningen en fastställd avgift </li>
+                    <li>Varje medlem ansvarar för sin egen ekonomi</li>
+                    <li>I medlemsskapet ingår att  stå i butiken enligt fastställt schema, samt städa i lokalen. <br>  Varje medlem ingår i en arbetsgrupp</li>
+                    <li>Föreningens angelägenheter behandlas på månadsmöten</li>
+                </ul>
+                <p>Viktigt är ett personligt engagemang i butikens utveckling.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<section class="form">
+
+    <!-- Form fill in text -->
+    <form action="/onSubmit.php" class="form_textfield">
+    <div>
+        <h3>VILL DU BLI MEDLEM?</h3>
+        <p class="form___textfield">Skicka en förfrågan här!</p>
+    </div>
+
+    <div class="form__textfield">
+        <div class="row_1">
+            <input type="text" name="textField" class="form__texfield--input" placeholder="  Förnamn">
+            <input type="text" name="textField" class="form__texfield--input" placeholder="  Efternamn">
+        </div>
+
+        <div class="row_2">
+            <input type="text" name="textField" class="form__texfield--input" placeholder="  Telefon">
+            <input type="text" name="textField" class="form__texfield--input" placeholder="  Mail">
+        </div>
+    </div>
+
+    <!-- Form checkboxes -->
+    <div class="form_checkboxes">
+        <div class="checkbox_row">
+            <div class="column">
+                <input type="checkbox" name="hantverk" class="checkbox__" value="akvarell"/>
+                <label for="akvarell">Akvarell</label>
+            </div>
+            <div class="column">
+                <input type="checkbox" name="hantverk" class="checkbox__" value="broderi"/>
+                <label for="broderi">Broderi</label>
+            </div>
+            <div class="column">
+                <input type="checkbox" name="hantverk" class="checkbox__" value="glashantverk"/>
+                <label for="glashantverk">Glashantverk</label>
+            </div>
+        </div>
+
+    <div class="checkbox_row">
+        <div class="column">
+            <input type="checkbox" name="hantverk" class="checkbox__" value="keramik"/>
+            <label for="keramik">Keramik</label>
+        </div >
+        <div class="column">
+            <input type="checkbox" name="hantverk" class="checkbox__" value="Metal"/>
+            <label for="Metal">Metall</label>
+        </div>
+        <div class="column">
+            <input type="checkbox" name="hantverk" class="checkbox__" value="malningar"/>
+            <label for="malningar">Målningar</label>
+        </div>
+    </div>
+
+    <div class="checkbox_row">
+        <div class="column">
+            <input type="checkbox" name="hantverk" class="checkbox__" value="smide"/>
+            <label for="smide">Smide</label> <br>
+        </div>
+        <div class="column">
+            <input type="checkbox" name="hantverk" class="checkbox__" value="textil"/>
+            <label for="texil">Textil</label>
+        </div>
+        <div class="column">
+            <input type="checkbox" name="hantverk" id="checkbox__" value="annat"/>
+            <label for="annat">Annat</label>
+        </div>
+    </div>
+
+<!-- </div> -->
+
+    <div class="picture_area">
+        
+        <h4>Bifoga bilder på dina hantverk</h4>
+        <div class="square">
+            <div class="form_text">
+                <a href="" class="form_link link">Lägg till bild </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h4>Kort om dig inför presentation</h4>
+    <textarea name="mytextarea" class="textSection"></textarea>
+
+    <input type="submit" value="Skicka" class="hero__btn contact_button">
+    </form>
+
+</section>
+
+    <!-- Javascript for the menu animation -->
+    <script src="menu.js"></script>
+
+</body>
+</html>

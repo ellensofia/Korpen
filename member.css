@@ -1,0 +1,273 @@
+.grid_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "contactBOX1 bcontactBOX2"
+        "contactBOX3 contactBOX4"
+        "form form";
+}
+
+.form {
+    text-align: center;
+}
+
+.contactALL {
+    display: flex;
+    flex-direction: column;
+    padding-top: 74px;
+}
+
+.contactROW1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contactBOX1 {
+    grid-area: contactBOX1;
+    background-color: white;
+    width: 60%;
+    margin-left: 30px;
+}
+
+.contactBOX2 {
+    grid-area: contactBOX2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+.contactROW2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.contactBOX3 {
+    grid-area: contactBOX3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.contactBOX4 {
+    grid-area: contactBOX4;
+    background-color: white;
+    width: 60%;
+}
+.silver {
+    width: 300px;
+}
+
+/* FORM fill in */
+.form_textfield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+
+    background-color: #f5f4f2;
+}        
+
+.form__textfield {
+    width: 25rem;
+}
+
+.form___textfield {
+    margin: 0rem;
+}
+
+.row_1 {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+.row_2 {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+.checkbox_row {
+    display: flex;
+    margin: 1rem;
+}
+
+.contact_button {
+    margin: 1rem;
+}
+
+#contact_button:hover {
+    background-color: black;
+    color: white;
+}
+.square {
+    height: 50px;
+    width: 220px;
+    border: 1px dotted black;
+    background-color: #f5f4f2;
+    display: flex;
+    justify-content: center;
+}
+.textSection {
+    background-color: white;
+    width: 450px;
+    height: 160px;
+}
+.form_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_textfield {
+    grid-area: footer;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form___textfield--input{
+    border-radius: 10px;
+    border: 0.5px solid #222222;
+    background-color: white;
+    height: 1.5rem;
+    width: 10rem;
+}
+
+.form_checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.checkbox_row {
+    justify-content: space-between;
+    width: 70%;
+}
+
+.checkbox_ {
+    margin-left: 1rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 10vw;    
+    gap: 1rem;
+}
+
+@media screen and (max-width:900px) {
+
+    .contactBOX1 {
+        padding-left: 30px;
+        margin-left: 0;
+    }
+
+    .contactBOX4 {   
+        padding-right: 30px;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+
+    .contactALL {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contactROW1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contactBOX1 {
+        grid-area: contactBOX1;
+        background-color: white;
+        width: 60%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .contactBOX2 {
+        grid-area: contactBOX2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .contactROW2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contactBOX3 {
+        grid-area: contactBOX3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .contactBOX4 {
+        grid-area: contactBOX4;
+        background-color: white;
+        width: 60%;
+        padding-right: 0;
+    }
+
+    .contactBOX4 ul {
+        padding: 0;
+    }
+
+    .form_checkboxes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form__textfield {
+        width: 21rem;
+    }
+
+    .column {
+        width: 34vw;        
+        gap: 10px;
+    }
+
+    .textSection {
+        background-color: white;
+        max-width: 80%;
+        height: 160px;
+    }
+
+    .checkbox_row {
+        margin: 1rem 0;
+        width: 90%;
+    }
+}
